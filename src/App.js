@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles({
+  button: {
+    color: "white",
+    backgroundColor: "purple",
+  },
+});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Hello World</h1>
+      <Button
+        variant="contained"
+        startIcon={<DeleteIcon />}
+        className={classes.button}
+      >
+        Click for more...
+      </Button>
+    </>
   );
 }
 
