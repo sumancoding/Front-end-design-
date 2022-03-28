@@ -1,17 +1,10 @@
 import { makeStyles } from "@mui/styles";
 
-
-const useStyles = makeStyles({
-
-}));
+const useStyles = makeStyles({});
 
 const Rightbar = () => {
   const classes = useStyles();
-  return (
-    <div>
-
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Rightbar;

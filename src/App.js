@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 const useStyles = makeStyles({});
 
 const App = () => {
-  const classes = useStyles();
+  //const classes = useStyles();
   return (
     <div>
       <Navbar />
